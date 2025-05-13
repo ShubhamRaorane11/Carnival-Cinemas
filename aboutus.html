@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+             <img src="images/cinema.png" height="50" width="50"> 
+             <span>Carnival Cinemas</span>
+             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link bg-white text-dark rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="nav-bar.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-white text-dark rounded-pill pe-3 ps-3 text-center m-2" aria-current="page">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-white text-dark rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-white text-dark rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-white text-dark rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="testimonial.html">Testimonial</a>
+                    </li>
+         </ul>
+        </div>
+
+        <a class="nav-link border bg-white rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
+            <i class="bi bi-person fs-4"></i>
+        </a>
+        </div>
+    </nav>
+
+    <!-- start login modal -->
+
+    <div class="modal fade" id="login">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-dark border border-1 border-warning">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-white">Login</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="m-2">
+                      <label class="form-label text-warning">Email</label>
+                      <input type="email" placeholder="Enter your email" class="form-control">
+                    </div>
+                    <div class="m-2">
+                      <label class="form-label text-warning">Password</label>
+                      <input type="password" placeholder="Enter your password" class="form-control">
+                    </div>
+                </div>
+    
+                <div class="modal-footer">
+                  <button class="btn btn-warning">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<div class="container">
+    <h2 class="text-center text-warning mt-3 mb-2">Upcoming Movies</h2>
+    <div class="row">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/poster1.jpg" class="w-100 darken-image" height="400">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1></h1>
+                    <p class="opacity-75"></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Book now</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/poster2.jpg" class="w-100 darken-image" height="400">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1></h1>
+                    <p></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Book now</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/poster4.jpg" class="w-100 darken-image" height="400">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1></h1>
+                    <p></p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Book now</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</div>
+    <h2 class="bg-dark text-center text-warning mt-4 mb-1">Bollywood Movies</h2>
+<div class="container mt-5 mb-5">
+  <div class="row">
+      <div class="col-sm-3 text-center">
+          <div class="card shadow-lg border-1 border-warning bg-white">
+          <div class="card body">
+              <img src="images/animalposter.webp" class="img-fluid">
+              <h3 class="card-text text-dark">Animal</h3>
+              <p class="card-text text-dark">The hardened son of a powerful industrialist returns home after years abroad, uncovering a web of enemies, and vows to take bloody revenge on those threatening his father's power and life.</p>
+
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-primary">100$</button>
+          </div>
+      </div>
+  </div>
+        <div class="col-sm-3 text-center">
+            <div class="card shadow-lg border-1 border-warning bg-white">
+            <div class="card body">
+                <img src="images/chhaavaposter.webp" class="img-fluid">
+                <h3 class="card-text text-dark">Chaava</h3>
+                <p class="card-text text-dark">Shivaji's death triggers the Maratha-Mughal war. Sambhaji leads the resistance against Aurangzeb. Both sides endure fierce battles, betrayal, and losses in a relentless struggle for power.</p>
+
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">100$</button>
+            </div>
+        </div>
+    </div>
+          <div class="col-sm-3 text-center">
+              <div class="card shadow-lg border-1 border-warning bg-white">
+              <div class="card body">
+                  <img src="images/superposter.jpg" class="img-fluid">
+                  <h3 class="card-text text-dark">SuperBoys of Malegaon</h3>
+                  <p class="card-text text-dark">In Malegaon, Bollywood films offer escape from daily hardship. Inspired, Nasir Shaikh unites friends to create a local film, bringing hope, creativity, and a sense of purpose to their small town.</p>
+
+              </div>
+              <div class="card-footer">
+                  <button class="btn btn-primary">100$</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="card shadow-lg border-1 border-warning bg-white">
+        <div class="card body">
+            <img src="images/aavesham.webp" class="img-fluid">
+            <h3 class="card-text text-dark">Aavesham</h3>
+            <p class="card-text text-dark">Three college freshmen in Bangalore team up with an eccentric gangster to seek revenge on their senior bullies, navigating unexpected challenges and growing closer in the process.</p>
+
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">100$</button>
+        </div>
+    </div>
+</div>
+<div class="container mt-5 mb-5">
+  <div class="row">
+      <div class="col-sm-3 text-center">
+          <div class="card shadow-lg border-1 border-warning bg-white">
+          <div class="card body">
+              <img src="images/hit3.jpg" class="img-fluid">
+              <h3 class="card-text text-dark">Hit 3</h3>
+              <p class="card-text text-dark">Arjun Sarkaar, a top HIT officer from Visakhapatnam, is sent to Jammu and Kashmir to investigate a series of brutal murders. As he pursues a group of elusive killers, the case tests his skills and mental strength.</p>
+
+          </div>
+          <div class="card-footer">
+              <button class="btn btn-primary">100$</button>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+
